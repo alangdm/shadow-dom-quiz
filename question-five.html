@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Question Five - The Quirks of Shadow DOM and How to Take Advantage of Them
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/common-styles.css" />
+    <script src="./questions/question-five.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="./question-one.html">Q1</a>
+        <a href="./question-two.html">Q2</a>
+        <a href="./question-three.html">Q3</a>
+        <a href="./question-four.html">Q4</a>
+        <a href="./question-five.html" class="active">Q5</a>
+      </nav>
+    </header>
+    <main>
+      <h1>The Quirks of Shadow DOM and How to Take Advantage of Them</h1>
+
+      <h2>
+        Question Five - Shadow Parts
+      </h2>
+      <style>
+        question-five.custom-part::part(avatar) {
+          border-radius: 50%;
+        }
+
+        question-five.custom-part::part(name) {
+          font-family: Verdana;
+          color: mediumpurple;
+        }
+      </style>
+
+      <question-five></question-five>
+      <question-five class="custom-part"></question-five>
+    </main>
+    <footer>
+      <section>
+        <h2>
+          Articles:
+        </h2>
+        <ul>
+          <li><a href="#">English Article</a></li>
+          <li><a href="#" lang="ja">日本語記事</a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

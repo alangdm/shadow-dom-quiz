@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Question Four - The Quirks of Shadow DOM and How to Take Advantage of Them
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="/common-styles.css" />
+    <script src="./questions/question-four.js" type="module"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a>
+        <a href="./question-one.html">Q1</a>
+        <a href="./question-two.html">Q2</a>
+        <a href="./question-three.html">Q3</a>
+        <a href="./question-four.html" class="active">Q4</a>
+        <a href="./question-five.html">Q5</a>
+      </nav>
+    </header>
+    <main>
+      <h1>The Quirks of Shadow DOM and How to Take Advantage of Them</h1>
+
+      <h2>
+        Question Four - Styling Slots
+      </h2>
+      <style>
+        .some-class .header {
+          color: red;
+        }
+
+        .some-class div {
+          color: mediumvioletred;
+        }
+      </style>
+
+      <question-four>
+        <div>1</div>
+        <div class="special">2</div>
+        <div>3</div>
+      </question-four>
+
+      <question-four class="some-class">
+        <div>4</div>
+        <div class="special">5</div>
+        <div>6</div>
+        <span class="header" slot="header">
+          Second Element Header
+        </span>
+      </question-four>
+    </main>
+    <footer>
+      <section>
+        <h2>
+          Articles:
+        </h2>
+        <ul>
+          <li><a href="#">English Article</a></li>
+          <li><a href="#" lang="ja">日本語記事</a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>
