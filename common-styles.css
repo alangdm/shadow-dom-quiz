@@ -1,0 +1,62 @@
+/* 
+These are all styles intended for presentational purposes 
+and aren't important for the content mentioned in the article
+*/
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  margin: 1em;
+}
+
+:root {
+  --pale-blue: #4299e1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[lang="ja"] {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
+    メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック",
+    "MS Gothic", "Noto Sans CJK JP", TakaoPGothic, sans-serif;
+}
+
+h1 {
+  color: var(--pale-blue);
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--pale-blue);
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: var(--pale-blue);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+header nav a {
+  padding: 0.5rem 0.5rem;
+}
+header nav a.active {
+  border-bottom: 1px solid var(--pale-blue);
+}
+
+footer {
+  margin-top: 1rem;
+}
