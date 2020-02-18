@@ -1,6 +1,8 @@
 # The Quirks of Shadow DOM and How to Take Advantage of Them
 
-This is the Demo for this article:
+[Live Demo](https://glitch.com/~shadow-dom-quiz)
 
-- [English Article](#TODO)
-- [日本語記事](#TODO)
+This is the Demo for these articles:
+
+- [English Article](https://dev.to/alangdm/the-quirks-of-shadow-dom-and-how-to-take-advantage-of-them-4cd1)
+- [日本語記事](https://qiita.com/alangdm/items/cec32f21151a9da3c3f2)
