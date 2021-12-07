@@ -1,6 +1,6 @@
 # The Quirks of Shadow DOM and How to Take Advantage of Them
 
-[Live Demo](https://glitch.com/~shadow-dom-quiz)
+[Live Demo](https://alangdm.github.io/shadow-dom-quiz/)
 
 This is the Demo for these articles:
 
